@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Search Engine</title></head>
+<body>
+<form id = "search_form" action = "/lucky" method = "get">
+    <!--add input for keyword-->
+    <!--add button for "Search", using the getUrls function.-->
+    <!--add button for "I'm feeling lucky"-->
+</form>
+<ul id="urls"></ul><!--This is the list where the urls should be added after the search function is applied-->
+<script>
+async function getUrls() {
+      try {
+      const param = document.getElementById('input').value; //TODO: Update id if needed.
+      const url = `http://localhost:8080/search?q=${param}` //TODO: Update port if needed
+      //TODO: complete code to get the urls using the /search API and add the urls, with hyperlinks, into the list with id "urls".
+</script>
+</body>
+</html>
